@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amscd, amsthm}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{question}[theorem]{Question}
+
+\newenvironment{definition}[1][Definition]
+{
+	\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]
+	}
+	{
+	\end{trivlist}
+}
+
+
+
+\title{HW Solution}
+%Put your name here.
+\author{First Last}
+%Check the due date.
+\date{01/25/2017}
+
+\begin{document}
+\maketitle
+%Set double spacing
+\linespread{2}
+%Counters to manipulate theorem numbers
+\setcounter{section}{1}
+\setcounter{theorem}{0}
+
+\begin{theorem}
+Let a, b, and c be integers. If \(a|b\) and \(a|c\), then \(a|(b+c)\).
+%Note: The pair, \(  \), puts everything inside into the 'in-line math type environment'. For equations on their own line, use \align{} or \align*{} (for no numbering).
+\end{theorem}
+
+\begin{proof}
+Here is where you write your proof.
+\end{proof}
+
+\begin{theorem}
+...
+\end{theorem}
+
+\begin{proof}
+...
+\end{proof}
+
+\begin{theorem}
+...
+\end{theorem}
+
+\begin{proof}
+...
+\end{proof}
+
+Here are some examples of how to use other environments, modify standard ones, and how to use counters.
+\setcounter{section}{3}
+\setcounter{theorem}{4}
+\begin{theorem}[The Squeeze Theorem]
+	...
+\end{theorem}
+
+\begin{proof}
+	...
+\end{proof}
+
+\setcounter{section}{2}
+\setcounter{theorem}{7}
+\begin{question}
+	...
+\end{question}
+
+\begin{proof}[Answer]
+	...
+\end{proof}
+
+
+\setcounter{section}{6}
+\setcounter{theorem}{1}
+\begin{exercise}
+	...
+\end{exercise}
+
+\begin{proof}[Solution]
+	...
+\end{proof}
+
+\begin{definition}
+	...
+\end{definition}
+
+\begin{definition}[Integers]
+	...
+\end{definition}
+
+\end{document}
